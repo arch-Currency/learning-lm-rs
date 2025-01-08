@@ -8,8 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8086746b-d9a8-402a-9156-2c7f26a0919d" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/src/model.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operators.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/params.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/params.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "arch-Currency"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arch-Currency&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:arch-Currency/learning-lm-rs.git",
-    "accountId": "2ffb37a1-deb8-4bea-855b-068cfe7fb81d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:arch-Currency/learning-lm-rs.git&quot;,
+    &quot;accountId&quot;: &quot;2ffb37a1-deb8-4bea-855b-068cfe7fb81d&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="2OAOFc9D" />
   </component>
@@ -48,6 +48,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Cargo.Run learning-lm-rust.executor": "Run",
     "Cargo.Test learning-lm-rust.executor": "Run",
+    "Cargo.Test model::test_load_safetensors.executor": "Run",
     "Cargo.Test model::test_mlp.executor": "Run",
     "Cargo.Test operators::test_matmul_transb.executor": "Run",
     "Cargo.Test operators::test_rms_norm.executor": "Run",
@@ -68,7 +69,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Test model::test_mlp">
+  <component name="RunManager" selected="Cargo.Test model::test_load_safetensors">
     <configuration name="Run learning-lm-rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="test" />
       <option name="command" value="run --package learning-lm-rust --bin learning-lm-rust" />
@@ -90,6 +91,23 @@
     <configuration name="Test learning-lm-rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="test" />
       <option name="command" value="test --workspace" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test model::test_load_safetensors" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package learning-lm-rust --bin learning-lm-rust model::test_load_safetensors -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -175,8 +193,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test model::test_mlp" />
+        <item itemvalue="Cargo.Test model::test_load_safetensors" />
         <item itemvalue="Cargo.Test operators::test_silu" />
+        <item itemvalue="Cargo.Test model::test_mlp" />
         <item itemvalue="Cargo.Test operators::test_matmul_transb" />
         <item itemvalue="Cargo.Test operators::test_rms_norm" />
       </list>
@@ -199,6 +218,8 @@
       <workItem from="1736330810372" duration="3708000" />
       <workItem from="1736334689752" duration="1652000" />
       <workItem from="1736336399909" duration="158000" />
+      <workItem from="1736336567906" duration="61000" />
+      <workItem from="1736337775669" duration="4245000" />
     </task>
     <servers />
   </component>
